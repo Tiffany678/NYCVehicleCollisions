@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="mat-elevation-z8">
+    <button mat-icon-button [matMenuTriggerFor]="MenuOptions">
+        <mat-icon>menu</mat-icon></button>
+
+        <mat-menu #MenuOptions="matMenu">
+            <button mat-menu-item [routerLink]="['/dashboard']" >Dashboard</button>
+            <button mat-menu-item [routerLink]="['/dataAnalysis']">Data Analysis</button>
+            <button mat-menu-item [routerLink]="['/data']" >View Data</button>
+          </mat-menu>
+
+    <span routerLink="Das">NYC Motor Vehicle Collisions</span>
+    <span class="example-spacer"></span>
+
+        <button [routerLink]="['/about']" mat-button>About</button>
+        <button [routerLink]="['/contact']" mat-button>Contact</button>
+    </mat-toolbar>
