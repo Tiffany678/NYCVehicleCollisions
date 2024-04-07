@@ -12,6 +12,7 @@ import { DataTableComponent } from './component/data-table/data-table.component'
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DataAnalysisComponent } from './component/data-analysis/data-analysis.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     DashboardComponent,
     ContactComponent,
     DataTableComponent,
+    DataAnalysisComponent,
   ],
   imports: [
     BrowserModule,

@@ -3,16 +3,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { DataTableComponent } from './component/data-table/data-table.component';
+import { DataAnalysisComponent } from './component/data-analysis/data-analysis.component';
 
 const routes: Routes = [
-  {path:'dashboard', component:DashboardComponent},
-  {path:'contact', component:ContactComponent},
-  {path:'data', component:DataTableComponent},
-  { path: '', redirectTo: '/data', pathMatch: 'full' } // Redirect from empty path
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'data', component: DataTableComponent },
+  { path: 'dataAnalysis', component: DataAnalysisComponent },
+
+  { path: '', redirectTo: '/data', pathMatch: 'full' }, // Redirect from empty path
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
