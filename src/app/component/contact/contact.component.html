@@ -1,0 +1,71 @@
+<!-- <form
+  class="container-fluid h-100 bg-light text-dark"
+  [formGroup]="form"
+  style="display: flex; flex-direction: column; gap: 50px"
+> -->
+<!-- <div class="row justify-content-center align-items-center">
+    <h1>Staty Connected</h1>
+  </div> -->
+
+<!-- <div class="container-fluid h-100 bg-light text-dark">
+  <div class="row justify-content-center align-items-center">
+    <h1>Form</h1>
+  </div> -->
+<div class="row justify-content-center align-items-center h-75">
+  <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+    <h1>Get in touch</h1>
+    <form [formGroup]="form" action="javascript:void(0)" (submit)="sendEmail()">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input
+          formControlName="from_name"
+          type="text"
+          class="form-control"
+          name="name"
+          id="name"
+          placeholder="Enter your full name"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          formControlName="from_email"
+          type="text"
+          class="form-control"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="subject" class="form-label">Subject</label>
+        <input
+          formControlName="subject"
+          type="text"
+          class="form-control"
+          name="subject"
+          id="subject"
+          placeholder="Enter subject here"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">message</label>
+        <textarea
+          formControlName="message"
+          class="form-control"
+          id="message"
+          name="message"
+          rows="3"
+        ></textarea>
+      </div>
+
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary mb-3">
+          Confirm identity
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

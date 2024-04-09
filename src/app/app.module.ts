@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DataAnalysisComponent } from './component/data-analysis/data-analysis.component';
+import { AboutComponent } from './component/about/about.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { DataAnalysisComponent } from './component/data-analysis/data-analysis.c
     ContactComponent,
     DataTableComponent,
     DataAnalysisComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
