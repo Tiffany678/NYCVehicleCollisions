@@ -1,0 +1,26 @@
+<div>
+  <p class="font-monospace text-center mt-3">
+    There are about 1000,000 car accidents in New York every year. Every month,
+    the NYPD publishes crash data for all five city boroughs. This is the simple
+    dashboard showing the analyzed results from 12/01/2022 to 12/04/2022. And
+    due to the limitation of the NYC Open Data API, only the result of
+    analzyhing 1,000 records is shown below.
+    <br />
+    If interested, please also check out the
+    <a class="link-opacity-100" [routerLink]="['/data']">data source</a> and the
+    <a class="link-opacity-100" [routerLink]="['/dataAnalysis']"
+      >breakdown of traffic accidents</a
+    >.
+  </p>
+  <!-- <div style="display: flex; justify-content: center"> -->
+  <div class="d-flex justify-content-center mt-4">
+    <iframe
+      title="Collisions"
+      width="1200"
+      height="600"
+      src="https://app.powerbi.com/view?r=eyJrIjoiZTVmZGViYjAtYjJkYS00ZmNmLTlmMDktYmNkOTgwMWFkNjMyIiwidCI6IjA3OGRhMTA2LTBmOTYtNDE5Mi1hYTVhLWQ5Mzg4NjQ3YjdiYSIsImMiOjN9"
+      frameborder="0"
+      allowFullScreen="true"
+    ></iframe>
+  </div>
+</div>
