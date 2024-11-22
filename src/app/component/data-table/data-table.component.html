@@ -21,7 +21,7 @@
             >Crash Date</mat-header-cell
           >
           <mat-cell *matCellDef="let element">
-            {{ element.crash_date }}
+            {{ element.crash_date | date : "yyyy-MM-dd" }}
           </mat-cell>
         </ng-container>
 
@@ -44,7 +44,7 @@
 
         <ng-container matColumnDef="contributing_factor_vehicle_1">
           <mat-header-cell mat-sort-header mat-header-cell *matHeaderCellDef>
-            Contributing Factor Vehicle_1
+            Contributing Factor Vehicle1
           </mat-header-cell>
           <mat-cell *matCellDef="let element">
             {{ element.contributing_factor_vehicle_1 }}
@@ -52,7 +52,7 @@
         </ng-container>
         <ng-container matColumnDef="contributing_factor_vehicle_2">
           <mat-header-cell mat-sort-header mat-header-cell *matHeaderCellDef>
-            Contributing Factor Vehicle_2
+            Contributing Factor Vehicle2
           </mat-header-cell>
           <mat-cell mat-cell *matCellDef="let element">
             {{ element.contributing_factor_vehicle_2 }}
@@ -61,7 +61,7 @@
 
         <ng-container matColumnDef="vehicle_type_code1">
           <mat-header-cell mat-sort-header mat-header-cell *matHeaderCellDef>
-            Vehicle Type Code_1
+            Vehicle Type Code1
           </mat-header-cell>
           <mat-cell *matCellDef="let element">
             {{ element.vehicle_type_code1 }}
@@ -69,7 +69,7 @@
         </ng-container>
         <ng-container matColumnDef="vehicle_type_code2">
           <mat-header-cell mat-sort-header mat-header-cell *matHeaderCellDef>
-            Vehicle Type Code_2
+            Vehicle Type Code2
           </mat-header-cell>
           <mat-cell *matCellDef="let element">
             {{ element.vehicle_type_code2 }}
